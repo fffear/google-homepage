@@ -1,0 +1,120 @@
+img {
+    width: 442px;
+    height: 220px;
+    display: block;
+    margin: 0 auto;
+    }
+
+div form {
+    width: 100%;
+    /* margin: 0 auto; figure out why this doesn't work*/
+    text-align: center;
+    margin-top: 10px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /* overflow: hidden; figure out why this is needed to give colors */
+}
+
+li {
+    float: left;
+    margin: 0;
+}
+
+li a {
+    display: inline-block;
+    padding: 10px;
+    margin: 0;
+}
+
+.r-head {
+    float: right;
+}
+
+.sign-in {
+    background: rgb(15, 44, 207);
+    border-radius: 2px;
+    color: #FFF;
+    font-weight: bold;
+}
+
+.sign-in:hover {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.sign-in:visited {
+    color: #FFF;
+}
+
+header a:visited {
+    color: #000;
+}
+
+footer a:visited {
+    color: #000;
+}
+
+footer a:active {
+    color:#F00;
+}
+
+div header {
+    padding: 0 20px;
+    margin: 0 -10px;
+    font-size: 12px;
+}
+
+div footer {
+    font-size: 12px;
+    padding: 0 20px;
+    margin: 0 -10px;
+    border-top: 1px solid rgb(97, 93, 93);
+    background-color: #857d7d;
+}
+
+#location {
+    font-size: 12px;
+    padding: 10px 20px;
+    margin: 0 -10px;
+    background-color: #857d7d;
+    border-top: 1px solid rgb(97, 93, 93);
+    text-indent: 10px;
+}
+
+input.btn {
+    border:none;
+    padding: 10px;
+    margin: 20px 5px;
+    background-color: rgb(172, 169, 169);
+}
+
+input.btn:hover {
+    border: 1px solid rgb(92, 92, 92);
+}
+
+input.txt {
+    width: 500px;
+    height: 34px;
+    line-height: 34px;
+    box-shadow: 5px 5px 5px grey;
+}
+
+.bot-ft {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
