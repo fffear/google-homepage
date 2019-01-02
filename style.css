@@ -1,120 +1,170 @@
-img {
-    width: 442px;
-    height: 220px;
-    display: block;
-    margin: 0 auto;
-    }
-
-div form {
-    width: 100%;
-    /* margin: 0 auto; figure out why this doesn't work*/
-    text-align: center;
-    margin-top: 10px;
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8em;
+  padding: 0;
+  margin: 0;
 }
 
-a:link {
-    text-decoration: none;
+#container {
+  position: relative;
+  min-height: 100%;
+  padding-bottom: 80px;
 }
 
-a:hover {
-    text-decoration: underline;
+.parent {
+  text-align: center;
 }
+
+/* Google Logo */
+
+#g-logo {
+  margin-top: 150px;
+}
+
+.logo {
+  display: inline-block;
+}
+
+/* Search Bar */
+
+#search-container {
+  border: 1px solid #b3b3b3;
+  margin: 15px auto;
+  width: 400px;
+  border-radius: 3px;
+  box-shadow: 1px 1px 1px #b3b3b3;
+}
+
+#search-bar {
+  width: 350px;
+  height: 35px;
+  border: none;
+  font-size: 1em;
+}
+
+#search-container:hover {
+  box-shadow: 2px 4px 4px #b3b3b3;
+}
+
+#voice-control {
+  height: 20px;
+  width: 20px;
+  vertical-align: middle;
+}
+
+/* Submit Button */
+
+#sub-btn {
+  margin: 25px;
+}
+
+#sub-btn input {
+  margin: 5px;
+  padding:10px 15px;
+  border: none;
+  background-color: #F2F2F2;
+  border-radius: 2px;
+  font-weight: bold;
+  color: #757575;
+}
+
+#sub-btn input:hover {
+  border: 1px solid #757575;
+}
+
+/* Header & Footer */
 
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    /* overflow: hidden; figure out why this is needed to give colors */
+  list-style-type: none;
+  padding: 0;
+  margin: 15px;
 }
 
-li {
-    float: left;
-    margin: 0;
+ul li {
+  display: inline-block;
+  margin: 5px 10px;
 }
 
-li a {
-    display: inline-block;
-    padding: 10px;
-    margin: 0;
+ul li a:link {
+  text-decoration: none;
 }
 
-.r-head {
-    float: right;
+ul li a:hover {
+  text-decoration: underline;
 }
 
-.sign-in {
-    background: rgb(15, 44, 207);
-    border-radius: 2px;
-    color: #FFF;
-    font-weight: bold;
+nav ul li a:active {
+  color: #000;
 }
 
-.sign-in:hover {
-    color: #FFF;
-    text-decoration: none;
+ul li a:visited {
+  color: #000;
 }
 
-.sign-in:visited {
-    color: #FFF;
+footer ul li a:active {
+  color: #F00;
 }
 
-header a:visited {
-    color: #000;
+.r-link {
+  float: right;
 }
 
-footer a:visited {
-    color: #000;
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  background-color: #F2F2F2;
 }
 
-footer a:active {
-    color:#F00;
+footer ul {
+  margin: 7px 15px;
 }
 
-div header {
-    padding: 0 20px;
-    margin: 0 -10px;
-    font-size: 12px;
+/* Google App */
+.g-app {
+  height: 15px;
+  width: 15px;
+  opacity: 0.75;
 }
 
-div footer {
-    font-size: 12px;
-    padding: 0 20px;
-    margin: 0 -10px;
-    border-top: 1px solid rgb(97, 93, 93);
-    background-color: #857d7d;
+.g-app:hover {
+   opacity: 1;
+}
+
+/* Sign in */
+#sign-in {
+  background-color: blue;
+  color: #FFF;
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+#sign-in:hover {
+  text-decoration: none;
+}
+
+#sign-in:active {
+  background-color: rgb(0, 0, 156);
+  border-top: 2px solid rgb(0, 0, 77);
 }
 
 #location {
-    font-size: 12px;
-    padding: 10px 20px;
-    margin: 0 -10px;
-    background-color: #857d7d;
-    border-top: 1px solid rgb(97, 93, 93);
-    text-indent: 10px;
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  right: 0;
+  height: 40px;
+  border-top: 1px solid #E4E4E4;
+  border-bottom: 1px solid #E4E4E4;
 }
 
-input.btn {
-    border:none;
-    padding: 10px;
-    margin: 20px 5px;
-    background-color: rgb(172, 169, 169);
-}
-
-input.btn:hover {
-    border: 1px solid rgb(92, 92, 92);
-}
-
-input.txt {
-    width: 500px;
-    height: 34px;
-    line-height: 34px;
-    box-shadow: 5px 5px 5px grey;
-}
-
-.bot-ft {
-    display: block;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+#fbar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40px;
 }

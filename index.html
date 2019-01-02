@@ -1,55 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
       <link rel="stylesheet" href="style.css" type="text/css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
 
-    <body>
-       
-      <div>
-        <header>
-          <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Store</a></li>
-            <li class="r-head"><a href="#" class="sign-in">Sign In</a></li>
-            <li class="r-head"><a href="#">Images</a></li>
-            <li class="r-head"><a href="#">Gmail</a></li>
-          </ul>        
-        </header>
-      </div>
-<br>
-      <div>
-          <img src="https://www.google.com/logos/doodles/2015/googles-new-logo-5078286822539264.3-hp2x.gif" alt="Google's new logo">
-      </div>
+  <body>
+    <div id="container">
+<!-- Header Nav -->
 
-      <div>
-  <form>
-      <input class="txt" type="text"> <br>
-      <input class="btn" type="submit" value="Google Search">
-      <input class="btn" type="submit" value="I'm Feeling Lucky"> <br>
-  </form>
-</div>
-
-<div class="bot-ft">
-  <div id="location">
+    <nav id="nav">
       <ul>
-          <li>Australia</li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Store</a></li>
+        <li class="r-link"><a id="sign-in" href="#">Sign in</a></li>
+        <li class="r-link"><a href="#"><img class="g-app" src="GoogleApps.png" alt="Google Apps"></a></li>
+        <li class="r-link"><a href="#">Images</a></li>
+        <li class="r-link"><a href="#">Gmail</a></li>
       </ul>
+    </nav>
+
+    <div class="parent">
+
+<!-- Logo -->
+
+      <div id="g-logo">
+        <img class="logo" src="GoogleLogo.png" alt="Google Logo">
+      </div>
+
+      <form>
+
+<!-- Search Bar -->       
+        
+        <div id="search-container">
+          <input id="search-bar" type="text" name="search">
+          <a href="#"><img id="voice-control" id src="VoiceSearchButton.png" alt="Voice Control"></a>
+        </div>
+
+<!-- Buttons -->
+
+        <div id="sub-btn">
+          <input type="submit" value="Google Search">
+          <input type="submit" value="I'm Feeling Lucky">
+        </div>
+
+      </form>
+    </div>
+
   </div>
 
-  <div>
-  <footer>
-      <ul>
-        <li><a href="#">Advertising</a></li>
-        <li><a href="#">Business</a></li>
-        <li class="r-head"><a href="#">Settings</a></li>
-        <li class="r-head"><a href="#">Terms</a></li>
-        <li class="r-head"><a href="#">Privacy</a></li>
-      </ul>
-    
-  </footer>
-</div>
-</div>
-</body>
 
+
+<footer>  <!-- Footer -->
+  <div id="location">
+      <ul>
+        <li>Australia</li>
+      </ul>
+    </div>
+
+<div id="fbar">
+    <ul>
+      <li><a href="#">Advertising</a></li>
+      <li><a href="#">Business</a></li>
+      <li class="r-link"><a href="#">Settings</a></li>
+      <li class="r-link"><a href="#">Terms</a></li>
+      <li class="r-link"><a href="#">Privacy</a></li>
+    </ul>
+  </div>
+  </footer>  <!-- Footer End -->
+
+  </body>
 </html>
